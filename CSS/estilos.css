@@ -15,14 +15,20 @@ body {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   color: #fff;
   font-weight: bold;
   font-family: "Smooch Sans", sans-serif;
+  text-shadow: 3px 3px 5px black;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.8rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Smooch Sans", sans-serif;
+  text-shadow: 3px 3px 5px black;
+  margin-bottom: 3rem;
 }
 
 h3 {
@@ -30,7 +36,7 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 a {
@@ -163,7 +169,7 @@ a {
   width: 100%;
   height: auto;
   color: #fff;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .footeritem {
@@ -184,6 +190,71 @@ a {
   text-decoration: none;
   color: #1ac4ee;
   transition: all 0.3s;
+}
+
+.main_informacion, .infor {
+  color: #fff;
+}
+
+.fondo1nosotros {
+  background-image: url(../IMG/FondoNosotros.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_informacion {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px #929090;
+}
+.main_informacion p {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.comunicador {
+  background-image: url(../IMG/comun1.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 20rem;
+}
+
+.fondo2nosotros {
+  background-image: url(../IMG/Fondo2Nosotros.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40rem;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.infor {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px #929090;
+}
+.infor p {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.infor_mision {
+  margin-bottom: 5rem;
 }
 
 @media only screen and (min-width: 590px) {
@@ -290,6 +361,13 @@ a {
   .fotogaleria12 {
     grid-column: 1/2;
     grid-row: 4/5;
+  }
+
+  .fondo2nosotros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fondo2nosotros .main_informacion {
+    grid-column: 1/3;
   }
 
   .contenedorFooter {
