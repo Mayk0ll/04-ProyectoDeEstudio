@@ -130,7 +130,6 @@ a {
   height: 3rem;
   text-align: center;
   line-height: 2.5rem;
-  font-size: 2rem;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   border: 2px solid #1ac4ee;
@@ -141,6 +140,13 @@ a {
 .chat:hover {
   background-color: #1ac4ee;
   transition: background-color 0.5s;
+}
+.chat a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+.chat a:hover {
+  color: #fff;
 }
 
 .contenedorMain {

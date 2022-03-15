@@ -119,6 +119,7 @@ a{
         font-size: 2rem;
     }
 }
+
 .chat{
     position: fixed;
     bottom: 1px;
@@ -129,7 +130,6 @@ a{
     height: 3rem;
     text-align: center;
     line-height: 2.5rem;
-    font-size: 2rem;
     font-family: $fuente1;
     font-weight: bold;
     border: 2px solid $colorCuarto;
@@ -140,6 +140,14 @@ a{
     &:hover{
     background-color: #1ac4ee;
     transition:background-color 0.5s;
+    }
+
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        &:hover{
+            color: $colorblanco;
+        }
     }
 }
 .contenedorMain{
