@@ -41,7 +41,12 @@ h2{
     margin-bottom: 3rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 p{
     font-size: 2rem;
@@ -236,6 +241,71 @@ a{
 
 
 
+//Servicios
+.contenedorServicios{
+    @extend .contenedorPortafolio;
+    color: $colorblanco;
+    box-shadow: 1px 1px 5px rgb(146, 144, 144);
+    margin: 2rem;
+    padding: 1rem;
+}
+.paquetes{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    gap: 2rem;
+    
+    
+
+    .paquete{
+        background-color: $colorterceario;
+        width: 95%;
+        height: 40rem;
+        border-radius: 3rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1rem auto;
+    
+        .paqueteImg{
+            width: 100%;
+            height: 60%;
+            border-radius: 2rem;
+            background-image: url(../IMG/fotospaquete.png);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .paqueteBoton{
+            border: none;
+            
+            input{
+                font-size: 2rem;
+                width: 100%;
+                border: 1px solid $colorCuarto;
+                border-radius: 2rem;
+                font-weight: bold;
+                transition: all 0.7s;
+
+                &:hover{
+                    background-color: $colorCuarto;
+                    border: 1px solid $colorprimario;
+                    transition: all 0.7s;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
 // sobre nosotros
 .main_informacion, .infor{
     color: $colorblanco;
@@ -315,6 +385,10 @@ a{
     .contenedorMain{
         grid-template-columns: repeat(2, 1fr);
     }
+    .paquetes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .foto{
 
         img{
@@ -398,7 +472,20 @@ a{
         grid-row: 4/5;
     }
 }
-
+@media only screen and (min-width: 590px) and (max-width: 899px)  {
+    .paquete4{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .paquete5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .paquete6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
 
 
 @media only screen and (min-width: 900px){
@@ -420,6 +507,12 @@ a{
     .main{
         max-width: 110rem;
         margin: 0 auto;
+    }
+    .paquetes{
+        grid-template-columns: repeat(3, 1fr);
+        .paquete{
+            width: 85%;
+        }
     }
     .contenedorMain{
         grid-template-columns: repeat(3, 1fr);
@@ -459,3 +552,44 @@ a{
         }
     }
 }
+
+
+
+
+
+// @mixin fondocate($bcolor){
+//     background-color: $bcolor;
+// }
+
+// $categorias: (
+//     cat1: 'Smooch Sans',
+//     cat2: 'Shizuru', 
+//     cat3: 'BhuTuka Expanded One',
+// );
+
+// @each $cate, $fuen in $categorias {
+//     .categoria-#{$cate}{
+//         @extend .nombreClase;
+//         text-align: center;
+//         font-family: $fuen;        
+
+//         h2{
+//             line-height: 300px;
+//             font-size: 80px;
+//         }
+
+
+//         @if $cate == cat1{
+//             @include fondocate(silver)
+//         }
+//         @else if $cate == cat2{
+//             @include fondocate(gold)
+//         }
+//         @else if $cate == cat3{
+//             @include fondocate(dodgerblue)
+//         }
+//         @else{
+//             background-color: black;
+//         }
+//     }    
+// }
