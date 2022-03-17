@@ -16,7 +16,7 @@ $fuente2: 'Smooch Sans', sans-serif;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5;
+    font-size: 62.5%;
   }
 
 //   genericos
@@ -97,7 +97,7 @@ a{
         text-decoration: none;
         color: $colorCuarto;
         transition: color, transform 0.3s;
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 .hero{

@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5;
+  font-size: 62.5%;
 }
 
 body {
@@ -96,7 +96,7 @@ a {
   text-decoration: none;
   color: #1ac4ee;
   transition: color, transform 0.3s;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .hero {
